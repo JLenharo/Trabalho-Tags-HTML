@@ -12,6 +12,36 @@ header {
     padding: 5px;
     border-radius: 10px; /* Rounded corners */
     margin: 10px; /* Add margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 2px 2px 4px rgba(0, 0, 0, 0.5), 
+                 3px 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                2px 2px 4px rgba(0, 0, 0, 0.2), 
+                3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    background-color: #3c97c5;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Add margin for spacing */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                2px 2px 4px rgba(0, 0, 0, 0.2), 
+                3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white; 
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align:center;
+    text-decoration: none;
+    margin: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 2px 2px 4px rgba(0, 0, 0, 0.5), 
+                 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 hr {
@@ -20,6 +50,9 @@ hr {
     border: none; /* Remove default border */
     height: 5px; /* Set height for visual thickness */
     background-color: #ca97f7 ; /* Set the color of hr */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                2px 2px 4px rgba(0, 0, 0, 0.2), 
+                3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Style for the main section */
@@ -29,12 +62,20 @@ main {
     padding: 5px;
 }
 
+main h2 {
+    color: rgb(162, 0, 0); /* Indigo color for h2 headings */
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
+
 main p {
     font-family: 'Arial';
     font-size: large;
 }
 
-main ul {
+main ol {
     font-family: 'Arial';
     font-size: large;
 }
@@ -45,5 +86,10 @@ main img {
     margin-right: auto;
     max-width: 100%; /* Ensure the image is responsive */
     height: auto;
-    padding: 2%;
+    padding: 0%;
+}
+
+main b{ 
+    text-transform: uppercase;
+    font-family: Arial;
 }

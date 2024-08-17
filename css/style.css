@@ -95,11 +95,6 @@ main img {
     padding: 0%;
 }
 
-main a:hover {
-    color: #6a00c7; /* Highlight text in yellow on hover */
-    text-decoration: unset;
-}
-
 /* Style for the aside section */
 aside {
     background-color: #eeeeee; /* Lighter gray */
