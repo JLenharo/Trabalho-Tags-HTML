@@ -19,6 +19,15 @@ header nav {
     color: white;
     text-align: center;
     padding: 1px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Add margin for spacing */
+}
+
+nav a {
+    color: white; 
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: center;
 }
 
 hr {
