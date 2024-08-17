@@ -15,6 +15,9 @@ header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
                  2px 2px 4px rgba(0, 0, 0, 0.5), 
                  3px 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                2px 2px 4px rgba(0, 0, 0, 0.2), 
+                3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 header nav {
@@ -44,6 +47,9 @@ hr {
     border: none; /* Remove default border */
     height: 5px; /* Set height for visual thickness */
     background-color: #ca97f7 ; /* Set the color of hr */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                2px 2px 4px rgba(0, 0, 0, 0.2), 
+                3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Style for the main section */
@@ -64,6 +70,9 @@ main h2 {
     font-family: 'Arial Black', Arial, sans-serif;
     text-transform: uppercase; /* Transform text to uppercase */
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 2px 2px 4px rgba(0, 0, 0, 0.5), 
+                 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 main p {
@@ -83,9 +92,9 @@ main img {
     max-width: 100%; /* Ensure the image is responsive */
     height: auto;
     padding: 2%;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
-                 2px 2px 4px rgba(0, 0, 0, 0.5), 
-                 3px 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                2px 2px 4px rgba(0, 0, 0, 0.2), 
+                3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 main a:hover {
