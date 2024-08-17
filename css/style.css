@@ -71,6 +71,7 @@ main h2 {
     text-transform: uppercase; /* Transform text to uppercase */
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
 
 main p {
     font-family: 'Arial';
@@ -104,6 +105,9 @@ aside {
     padding: 1px;
     border-radius: 10px; /* Rounded corners */
     margin: 10px; /* Add margin for spacing */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 
+                2px 2px 4px rgba(0, 0, 0, 0.2), 
+                3px 3px 6px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -138,6 +142,9 @@ footer {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
                  2px 2px 4px rgba(0, 0, 0, 0.5), 
                  3px 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow:  1px 1px 2px rgba(0, 0, 0, 0.2), 
+                 2px 2px 4px rgba(0, 0, 0, 0.2), 
+                 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 footer div {
