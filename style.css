@@ -1,0 +1,122 @@
+body {
+    background-color: #e6ccfd; /* Light lilac color */
+    margin: 5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    /* Style for the header */
+header {
+    background-color: #47325a;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Add margin for spacing */
+}
+
+hr {
+    width: 100%; /* Set the width of hr */
+    margin: 10px auto; /* Center the hr with auto margins */
+    border: none; /* Remove default border */
+    height: 5px; /* Set height for visual thickness */
+    background-color: #ca97f7 ; /* Set the color of hr */
+}
+
+/* Style for the main section */
+main {
+    background-color: e6ccfd;
+    color: black;
+    padding: 5px;
+}
+
+/* Style for links within the main section */
+main a {
+    color: rgb(162, 0, 0);
+    text-decoration: none;
+}
+
+main h2 {
+    color: rgb(162, 0, 0); /* Indigo color for h2 headings */
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: center;
+}
+
+main p {
+    font-family: 'Arial';
+    font-size: large;
+}
+
+main ol {
+    font-family: 'Arial';
+    font-size: large;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    padding: 2%;
+}
+
+main a:hover {
+    color: #6a00c7; /* Highlight text in yellow on hover */
+    text-decoration: unset;
+}
+
+/* Style for the aside section */
+aside {
+    background-color: #eeeeee; /* Lighter gray */
+    color:black;
+    text-align: center;
+    padding: 1px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Add margin for spacing */
+}
+
+/* Style for links within the aside section */
+aside a {
+    color: rgb(162, 0, 0);
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+
+aside a:hover {
+    color: #6a00c7; /* Highlight text in yellow on hover */
+    text-decoration: unset;
+}
+
+aside p {
+    font-family: 'Arial';
+    font-size: large;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #69527c; /* Darker gray */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Add margin for spacing */
+}
+
+footer div {
+    font-family: 'Arial';
+    font-size: small;
+}
+
+footer i {
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+
+/* Style for the article headings */
+article h2, article h3, article h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
