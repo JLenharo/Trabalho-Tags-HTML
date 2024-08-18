@@ -52,7 +52,7 @@ nav a:hover {
 
 hr {
     width: 100%; /* Set the width of hr */
-    margin: 10px; /* Center the hr with auto margins */
+    margin: 10px auto; /* Center the hr with auto margins */
     margin-top: 0%;
     margin-bottom: 0%;
     border: none; /* Remove default border */

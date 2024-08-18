@@ -51,7 +51,7 @@ nav a:hover {
 
 hr {
     width: 100%; /* Set the width of hr */
-    margin: 10px; /* Center the hr with auto margins */
+    margin: 10px auto; /* Center the hr with auto margins */
     border: none; /* Remove default border */
     height: 5px; /* Set height for visual thickness */
     background-color: #ca97f7 ; /* Set the color of hr */
