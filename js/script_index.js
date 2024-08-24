@@ -6,8 +6,3 @@ function loadContent(page) {
         })
         .catch(error => console.error('Erro ao carregar conteúdo:', error));
 }
-
-// Carrega o conteúdo inicial ao abrir a página
-window.onload = function() {
-    loadContent('index.html');
-};
