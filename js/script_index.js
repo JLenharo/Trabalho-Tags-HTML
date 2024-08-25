@@ -21,7 +21,7 @@ function loadContent(page) {
         return; // Encerra a função para evitar carregamento adicional
     }
 
-    fetch(page)
+    fetch(`./content/${page}`)
         .then(response => response.text())
         .then(data => {
             document.getElementById('content-section').innerHTML = data;
