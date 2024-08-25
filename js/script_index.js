@@ -1,5 +1,5 @@
 function loadContent(page) {
-    // Se o link "Início" for clicado, apenas recarrega o conteúdo inicial sem fetch
+    
     if (page === "index.html") {
         document.getElementById('content-section').innerHTML = `
             <b><h2>O que são as tags em HTML?</h2></b>
@@ -18,7 +18,7 @@ function loadContent(page) {
             </ol>
             <p>Para saber mais sobre cada tipo de tag, utilize a barra de navegação acima.</p>
         `;
-        return; // Encerra a função para evitar carregamento adicional
+        return;
     }
 
     fetch(page)
@@ -26,18 +26,16 @@ function loadContent(page) {
         .then(data => {
             document.getElementById('content-section').innerHTML = data;
 
-            // Remover qualquer CSS antigo carregado
             const existingLink = document.getElementById('dynamic-css');
             if (existingLink) {
                 existingLink.remove();
             }
-
-            // Carrega o CSS correspondente se houver
+r
             const cssFileName = page.replace('.html', '.css');
             const linkElement = document.createElement('link');
             linkElement.rel = 'stylesheet';
             linkElement.href = `css/${cssFileName}`;
-            linkElement.id = 'dynamic-css'; // Para fácil remoção
+            linkElement.id = 'dynamic-css';
             document.head.appendChild(linkElement);
         })
         .catch(error => console.error('Erro ao carregar conteúdo:', error));
