@@ -25,18 +25,6 @@ function loadContent(page) {
         .then(response => response.text())
         .then(data => {
             document.getElementById('content-section').innerHTML = data;
-
-            const existingLink = document.getElementById('dynamic-css');
-            if (existingLink) {
-                existingLink.remove();
-            }
-r
-            const cssFileName = page.replace('.html', '.css');
-            const linkElement = document.createElement('link');
-            linkElement.rel = 'stylesheet';
-            linkElement.href = `css/${cssFileName}`;
-            linkElement.id = 'dynamic-css';
-            document.head.appendChild(linkElement);
         })
         .catch(error => console.error('Erro ao carregar conteúdo:', error));
 }
