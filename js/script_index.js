@@ -1,5 +1,5 @@
-function loadContent(page) {
-    
+function loadContent(page, cssFile) {
+    // Caso seja a página index.html, carrega o conteúdo estático específico
     if (page === "index.html") {
         document.getElementById('content-section').innerHTML = `
             <b><h2>O que são as tags em HTML?</h2></b>
@@ -18,13 +18,34 @@ function loadContent(page) {
             </ol>
             <p>Para saber mais sobre cada tipo de tag, utilize a barra de navegação acima.</p>
         `;
+
+        // Alterar o CSS para o CSS da página inicial
+        changeCSS(cssFile);
         return;
     }
 
+    // Carregar conteúdo de outras páginas
     fetch(page)
         .then(response => response.text())
         .then(data => {
             document.getElementById('content-section').innerHTML = data;
+
+            // Alterar o CSS com base na página carregada
+            changeCSS(cssFile);
         })
         .catch(error => console.error('Erro ao carregar conteúdo:', error));
 }
+
+// Função para alterar o CSS da página
+function changeCSS(cssFile) {
+    let oldLink = document.querySelector('link[rel="stylesheet"]');
+    let newLink = document.createElement('link');
+    newLink.rel = 'stylesheet';
+    newLink.href = cssFile;
+
+    // Substituir o CSS antigo pelo novo
+    document.head.replaceChild(newLink, oldLink);
+}
+
+// Exemplo de uso para carregar a página index.html e seu respectivo CSS
+loadContent('index.html', 'css/index.css');
